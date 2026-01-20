@@ -1,0 +1,327 @@
+/* ================= СБРОС ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= ОСНОВА ================= */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1e1e1e;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================= КОНТЕЙНЕР ================= */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ================= ШАПКА ================= */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 100px;
+}
+
+/* ЛОГО */
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    padding: 10px 18px;
+    border: 2px solid #1e1e1e;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+/* НАВИГАЦИЯ */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.nav a {
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #1e1e1e;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav-accent {
+    font-weight: 700;
+}
+
+/* КОНТАКТЫ */
+.header-contacts {
+    text-align: right;
+    font-size: 13px;
+}
+
+.phone {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+}
+
+.info {
+    color: #666;
+}
+
+/* ================= ПЕРВЫЙ ЭКРАН ================= */
+main {
+    min-height: 100vh;
+    background: url("../images/photo_5431461277009120919_y.jpg") no-repeat center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero {
+    text-align: center;
+    max-width: 800px;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 16px 36px;
+    border-radius: 40px;
+    background-color: rgba(255,255,255,0.9);
+    color: #1e1e1e;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+.hero-btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ================= УСЛУГИ ================= */
+.white-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.fade-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s ease;
+}
+
+/* КОНТЕЙНЕР УСЛУГ */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* КАРТОЧКА */
+.service-card {
+    background-color: #f8f8f8;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    text-align: center;
+    opacity: 1;
+    transform: translateY(50px);
+    transition: 0.8s ease;
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin: 18px 0 10px;
+    font-weight: 600;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 14px 18px;
+}
+
+/* КНОПКА ЦЕНЫ */
+.price-btn {
+    display: inline-block;
+    margin-bottom: 22px;
+    padding: 8px 22px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.price-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* HOVER КАРТОЧКИ */
+.service-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* ================= АНИМАЦИЯ ================= */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= АДАПТИВ ================= */
+@media (max-width: 1100px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+
+/* ================= ПОДВАЛ ================= */
+.footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.footer-inner {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 16px 0;
+}
+
+.socials a {
+    position: relative;
+}
+
+.socials a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.socials a:hover::after {
+    width: 100%;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+/* ОБЩИЕ СТИЛИ */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ШАПКА */
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* ФУТЕР */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+}

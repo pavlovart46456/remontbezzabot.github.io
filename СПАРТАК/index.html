@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ремонт без забот — Ремонт квартир</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <!-- ЛОГО -->
+        <a href="/index.html" class="logo">
+            Ремонт без забот
+        </a>
+
+        <!-- НАВИГАЦИЯ -->
+        <nav class="nav">
+            <a href="portfolio/index.html">Портфолио и отзывы</a>
+            <a href="/index.html#services">Услуги</a>
+            <a href="/master/index.html" class="nav-accent">Оставить заявку</a>
+            <a href="contacts/index.html">Контакты</a>
+        </nav>
+
+        <!-- КОНТАКТЫ -->
+        <div class="header-contacts">
+            <a href="tel:+79999999999" class="phone">+7 (999) 999-99-99</a>
+            <span class="info">Санкт-Петербург · 8:00–22:00</span>
+        </div>
+
+    </div>
+</header>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Ремонт квартир под ключ</h1>
+        <p>Без стресса. Без переплат. В срок.</p>
+
+        <a href="master/index.html" class="hero-btn">
+            Оставить заявку
+        </a>
+    </section>
+</main>
+
+<!-- ================= УСЛУГИ ================= -->
+<section class="white-section" id="services">
+    <h2 class="fade-title">Полный перечень работ</h2>
+
+    <div class="services-container">
+
+        <div class="service-card fade-card">
+            <img src="images/dveri.webp" alt="Установка дверей">
+            <h3>Установка входных дверей</h3>
+            <p>Профессиональная установка дверей с гарантией качества.</p>
+            <a href="prices/prices.html" target="_blank" class="price-btn">Узнать цену</a>
+        </div>
+
+        <div class="service-card fade-card">
+            <img src="images/potolok.jpg" alt="Натяжные потолки">
+            <h3>Натяжные потолки</h3>
+            <p>Современные потолки для стильного интерьера.</p>
+            <a href="prices/prices.html" target="_blank" class="price-btn">Узнать цену</a>
+        </div>
+
+        <div class="service-card fade-card">
+            <img src="images/kondey.jpg" alt="Кондиционеры">
+            <h3>Установка и обслуживание кондиционеров</h3>
+            <p>Монтаж и сервис кондиционеров любой сложности.</p>
+            <a href="prices/prices.html" target="_blank" class="price-btn">Узнать цену</a>
+        </div>
+
+        <div class="service-card fade-card">
+            <img src="images/kosmetik.png" alt="Косметический ремонт">
+            <h3>Косметический ремонт</h3>
+            <p>Обновление интерьера без перепланировки. Быстро и аккуратно.</p>
+            <a href="prices/prices.html" target="_blank" class="price-btn">Узнать цену</a>
+        </div>
+
+        <div class="service-card fade-card">
+            <img src="images/kondey.jpg" alt="Капитальный ремонт">
+            <h3>Капитальный ремонт</h3>
+            <p>Полное обновление квартиры с заменой коммуникаций и покрытий.</p>
+            <a href="prices/prices.html" target="_blank" class="price-btn">Узнать цену</a>
+        </div>
+
+        <div class="service-card fade-card">
+            <img src="images/dizayn.jpg" alt="Дизайнерский ремонт">
+            <h3>Дизайнерский ремонт</h3>
+            <p>Ремонт по индивидуальному проекту с авторским надзором.</p>
+            <a href="prices/prices.html" target="_blank" class="price-btn">Узнать цену</a>
+        </div>
+
+        <div class="service-card fade-card">
+            <img src="images/mnogourpotolok.jpg" alt="Многоуровневые потолки">
+            <h3>Многоуровневые потолки</h3>
+            <p>Зонирование пространства и идеально ровные сложные конструкции.</p>
+            <a href="prices/prices.html" target="_blank" class="price-btn">Узнать цену</a>
+        </div>
+
+        <div class="service-card fade-card">
+            <img src="images/megdveri.jpg" alt="Межкомнатные двери">
+            <h3>Межкомнатные двери</h3>
+            <p>Установка дверей, которые идеально впишутся в ваш интерьер.</p>
+            <a href="prices/prices.html" target="_blank" class="price-btn">Узнать цену</a>
+        </div>
+
+        <div class="service-card fade-card">
+            <img src="images/vanna.jpg" alt="Ванная и туалет под ключ">
+            <h3>Ванная и туалет под ключ</h3>
+            <p>Полный цикл работ: от демонтажа до чистовой отделки.</p>
+            <a href="prices/prices.html" target="_blank" class="price-btn">Узнать цену</a>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer" id="contacts">
+    <div class="container footer-inner">
+
+        <div class="footer-title">
+            Следите за нами
+        </div>
+
+        <div class="socials">
+            <a href="#">Telegram</a>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+        </div>
+
+        <div class="footer-copy">
+            © Ремонт без забот 2005–2026
+        </div>
+
+    </div>
+</footer>
+
+<script>
+function revealOnScroll() {
+    const elements = document.querySelectorAll('.fade-title, .fade-card');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+            el.classList.add('visible');
+        }
+    });
+}
+window.addEventListener('load', revealOnScroll);
+window.addEventListener('scroll', revealOnScroll);
+</script>
+</body>
+</html>

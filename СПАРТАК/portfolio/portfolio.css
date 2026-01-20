@@ -1,0 +1,192 @@
+/* =========================
+   PORTFOLIO PAGE
+========================= */
+
+.portfolio {
+    background-color: #ffffff;
+    background-image: none !important;
+    padding: 90px 0 100px;
+    text-align: center;
+}
+
+/* Контейнер */
+.portfolio .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+.portfolio h1 {
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 60px 0 25px;
+    color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   REVIEWS SECTION
+========================= */
+
+.reviews {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.reviews h2 {
+    margin-bottom: 60px;
+}
+
+/* =========================
+   REVIEW LIST
+========================= */
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* расстояние между отзывами */
+}
+
+/* =========================
+   REVIEW CARD
+========================= */
+
+.review-card {
+    width: 100%;
+    max-width: 620px; /* фиксированная ширина */
+    padding: 36px 40px;
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* =========================
+   REVIEW CONTENT
+========================= */
+
+.review-stars {
+    font-size: 20px;
+    color: #f5b400;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+.review-author {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+.review-city {
+    font-size: 14px;
+    color: #777;
+}
+/* =========================
+   CLEAN TEXT STYLE
+========================= */
+
+.portfolio h1,
+.portfolio h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+.portfolio p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+.portfolio strong {
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+.text-accent {
+    font-weight: 600;   /* чуть жирнее, но не как h1 */
+    color: #1e1e1e;     /* темнее основного текста */
+}
+.reviews {
+    margin-top: 120px;
+}
+
+.reviews h2 {
+    margin-bottom: 50px;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px; /* больше воздуха */
+}
+
+
+
+/* =========================
+   SERVICES LIST
+========================= */
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.service-item img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    flex-shrink: 0;
+}
+
+.service-item p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .service-item img {
+        width: 100%;
+        max-width: 420px;
+        height: 260px;
+    }
+}

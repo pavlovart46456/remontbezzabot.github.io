@@ -1,0 +1,177 @@
+/*================= СБРОС ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+
+
+/* ===== ЛОГО ===== */
+.prices-logo {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e1e1e;
+    text-decoration: none;
+    white-space: nowrap;
+
+    padding: 10px 18px;
+    border: 2px solid #1e1e1e;
+    border-radius: 10px;
+
+    margin-left: -8px; /* сдвиг чуть левее */
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+.prices-nav {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.prices-nav a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Подчёркивание при hover */
+.prices-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 1px;
+    background-color: #1e1e1e;
+    transition: width 0.3s ease;
+}
+
+.prices-nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== КОНТАКТЫ ===== */
+.prices-contacts {
+    text-align: right;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.prices-phone {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #1e1e1e;
+    text-decoration: none;
+}
+
+/* ================= ОСНОВНОЙ КОНТЕНТ ================= */
+.prices-page {
+    background: none !important;
+    background-color: #ffffff;
+    display: block;
+    min-height: auto;
+    color: #1e1e1e;
+}
+
+.prices-page .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 24px 100px;
+}
+
+/* ===== ЗАГОЛОВОК ===== */
+.prices-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.back-link {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.back-link:hover {
+    border-color: #1e1e1e;
+}
+
+/* ================= ТАБЛИЦА ================= */
+.prices-table-wrapper {
+    overflow-x: auto;
+}
+
+.prices-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    border: 2px solid #1e1e1e;
+}
+
+/* Шапка таблицы */
+.prices-table thead th {
+    padding: 18px 14px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 2px solid #1e1e1e;
+}
+
+/* Ячейки */
+.prices-table tbody td {
+    padding: 18px 14px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Последняя строка */
+.prices-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Названия услуг */
+.service-name {
+    font-weight: 700;
+}
+
+/* Первый столбец */
+.prices-table td:first-child {
+    width: 60px;
+    color: #777;
+}
+/* ================= CTA КНОПКА ================= */
+.prices-cta {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 16px 42px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

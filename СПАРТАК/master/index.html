@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфолио и отзывы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="../index.html" class="logo">Ремонт без забот</a>
+
+        <nav class="nav">
+            <a href="../portfolio/index.html">Портфолио и отзывы</a>
+            <a href="../index.html#services">Услуги</a>
+            <a href="../master/index.html" class="nav-accent">Оставить заявку</a>
+            <a href="../contacts/index.html">Контакты</a>
+        </nav>
+
+        <div class="header-contacts">
+            <a href="tel:+79999999999" class="phone">+7 (999) 999-99-99</a>
+            <span class="info">Санкт-Петербург · 8:00–22:00</span>
+        </div>
+
+    </div>
+</header>
+
+    <!-- Заголовок страницы -->
+    <section class="master-header">
+        <h1>Оставьте заявку</h1>
+        <p> и мы свяжемся с вами в ближайшее время</p>
+    </section>
+
+    <!-- Форма заявки -->
+    <section class="master-form">
+        <form action="#" method="post">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+
+            <label for="service">Услуга</label>
+            <select id="service" name="service" required>
+                <option value="">Выберите услугу</option>
+                <option value="remont_vannoy">Ванна-туалет под ключ</option>
+                <option value="potolok">Натяжные потолки</option>
+                <option value="kondey">Кондиционер</option>
+                <option value="remont_komnat">Ремонт комнаты</option>
+                <option value="remont_komnat">Установка дверей входные и межкомнатные</option>
+            </select>
+
+            <label for="date">Желаемая дата</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" placeholder="Дополнительные пожелания"></textarea>
+
+            <button type="submit" class="submit-btn">Отправить заявку</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ремонт без забот. Все права защищены.</p>
+    </footer>
+</body>
+</html>
